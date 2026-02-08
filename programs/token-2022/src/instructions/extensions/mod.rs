@@ -4,6 +4,7 @@ pub mod transfer_hook;
 
 #[repr(u8)]
 #[non_exhaustive]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ExtensionDiscriminator {
     DefaultAccountState = 28,
     MemoTransfer = 30,
